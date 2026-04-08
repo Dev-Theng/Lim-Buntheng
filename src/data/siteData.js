@@ -97,7 +97,7 @@ export const siteData = {
   portfolioFilters: [
     { label: 'All', filter: '*', active: true },
     { label: 'Website', filter: '.filter-web' },
-    { label: 'System', filter: '.filter-product' },
+    { label: 'Mobile App', filter: '.filter-app' },
     { label: 'Machine Learning', filter: '.filter-ml' },
   ],
   portfolioItems: [
@@ -118,7 +118,7 @@ export const siteData = {
           { label: 'Category', value: 'Website' },
           { label: 'Role', value: 'Frontend and UI' },
           { label: 'Project date', value: '2025' },
-          { label: 'Project URL', value: 'Private' },
+          { label: 'Project URL', value: 'https://g9-volunteer.netlify.app/' },
         ],
         descriptionTitle: 'Volunteer website',
         descriptionText:
@@ -141,8 +141,8 @@ export const siteData = {
         infoItems: [
           { label: 'Category', value: 'Web App' },
           { label: 'Role', value: 'Frontend and data visualization' },
-          { label: 'Project date', value: '2025' },
-          { label: 'Project URL', value: 'Private' },
+          { label: 'Project date', value: '2026' },
+          { label: 'Project URL', value: 'https://ant-e-feedback-client.vercel.app/' },
         ],
         descriptionTitle: 'ANT-E Report dashboard',
         descriptionText:
@@ -165,7 +165,7 @@ export const siteData = {
         infoItems: [
           { label: 'Category', value: 'Machine Learning' },
           { label: 'Role', value: 'Model training and evaluation' },
-          { label: 'Project date', value: '2024' },
+          { label: 'Project date', value: '2025' },
           { label: 'Project URL', value: 'Private' },
         ],
         descriptionTitle: 'Speed limit detection system',
@@ -174,21 +174,21 @@ export const siteData = {
       },
     },
     {
-      slug: 'books-1',
+      slug: 'Jersey Sports',
       filter: 'filter-app',
-      image: '/assets/img/portfolio/books-1.jpg',
-      title: 'Books 1',
-      description: 'Lorem ipsum, dolor sit amet consectetur',
-      gallery: 'portfolio-gallery-book',
-      details: '/portfolio/books-1',
+      image: '/assets/img/portfolio/Flutter.png',
+      title: 'Jersey Sports',
+      description: 'A mobile app for sports enthusiasts to discover and connect with local teams and events.',
+      gallery: 'portfolio-gallery-app',
+      details: '/portfolio/jersey-sports',
       detailsData: {
-        slides: [{ image: '/assets/img/portfolio/books-1.jpg', alt: 'Books project slide 1' }],
+        slides: [{ image: '/assets/img/portfolio/jersey-sports.jpg', alt: 'Jersey Sports slide 1' }],
         infoItems: [
           { label: 'Category', value: 'App' },
           { label: 'Role', value: 'UI and layout' },
           { label: 'Project date', value: '2023' },
         ],
-        descriptionTitle: 'Books app concept',
+        descriptionTitle: 'Jersey Sports app concept',
         descriptionText:
           'A clean layout concept for showcasing book collections with featured highlights and simple navigation.',
       },
@@ -274,6 +274,9 @@ export const siteData = {
     { icon: 'bi bi-telephone', title: 'Phone', value: '081710040' },
     { icon: 'bi bi-envelope', title: 'Email', value: 'limbuntheng.dev@gmail.com' },
   ],
+  contactForm: {
+    endpoint: 'https://formspree.io/f/xzdkwjdj',
+  },
   swiperConfig: {
     loop: true,
     speed: 600,

@@ -2,11 +2,56 @@
 import { RouterLink } from 'vue-router'
 import { siteData } from '@/data/siteData'
 
-const openTelegram = (event) => {
-  if (event) {
-    event.stopImmediatePropagation()
+const sendContactForm = async (event) => {
+  event?.preventDefault()
+
+  const form = event?.target
+  if (!form) {
+    return
   }
-  window.open('https://t.me/Ch1k0_33', '_blank')
+
+  const loading = form.querySelector('.loading')
+  const errorMessage = form.querySelector('.error-message')
+  const sentMessage = form.querySelector('.sent-message')
+
+  loading?.classList.add('d-block')
+  errorMessage?.classList.remove('d-block')
+  sentMessage?.classList.remove('d-block')
+
+  const endpoint = siteData.contactForm?.endpoint
+  if (!endpoint || endpoint.includes('yourFormId')) {
+    loading?.classList.remove('d-block')
+    if (errorMessage) {
+      errorMessage.textContent = 'Please set your Formspree endpoint in siteData.contactForm.endpoint.'
+      errorMessage.classList.add('d-block')
+    }
+    return
+  }
+
+  try {
+    const formData = new FormData(form)
+    const response = await fetch(endpoint, {
+      method: 'POST',
+      body: formData,
+      headers: {
+        Accept: 'application/json',
+      },
+    })
+
+    if (!response.ok) {
+      throw new Error(`Request failed: ${response.status}`)
+    }
+
+    loading?.classList.remove('d-block')
+    sentMessage?.classList.add('d-block')
+    form.reset()
+  } catch (error) {
+    loading?.classList.remove('d-block')
+    if (errorMessage) {
+      errorMessage.textContent = 'Message failed to send. Please try again.'
+      errorMessage.classList.add('d-block')
+    }
+  }
 }
 </script>
 
@@ -342,12 +387,12 @@ const openTelegram = (event) => {
 
           <div class="col-lg-7">
             <form
-              action="#"
+              :action="siteData.contactForm?.endpoint || '#'"
               method="post"
               class="php-email-form"
               data-aos="fade-up"
               data-aos-delay="200"
-              @submit.prevent="openTelegram"
+              @submit.prevent="sendContactForm"
             >
               <div class="row gy-4">
                 <div class="col-md-6">
