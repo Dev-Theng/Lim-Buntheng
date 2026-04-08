@@ -13,6 +13,19 @@ const fallbackDetails = siteData.portfolioDetails
 
 const detailsData = computed(() => portfolioItem.value?.detailsData || fallbackDetails)
 const pageTitle = computed(() => portfolioItem.value?.title || fallbackDetails.title)
+const swiperConfig = computed(() => {
+  const slides = detailsData.value?.slides || []
+  const baseConfig = { ...fallbackDetails.swiperConfig }
+
+  if (slides.length < 2) {
+    return {
+      ...baseConfig,
+      loop: false,
+    }
+  }
+
+  return baseConfig
+})
 const breadcrumbs = computed(() => [
   { label: 'Home', href: '/', current: false },
   { label: 'Portfolio', href: '/#portfolio', current: false },
@@ -45,7 +58,7 @@ const breadcrumbs = computed(() => [
         <div class="row gy-4">
           <div class="col-lg-8">
             <div class="portfolio-details-slider swiper init-swiper">
-              <div class="swiper-config d-none" v-text="JSON.stringify(siteData.portfolioDetails.swiperConfig)"></div>
+              <div class="swiper-config d-none" v-text="JSON.stringify(swiperConfig)"></div>
 
               <div class="swiper-wrapper align-items-center">
                 <div class="swiper-slide" v-for="slide in detailsData.slides" :key="slide.image">

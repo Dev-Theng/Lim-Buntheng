@@ -32,13 +32,13 @@ export const siteData = {
   stats: [
     {
       icon: 'bi bi-emoji-smile',
-      end: 232,
+      end: 2,
       title: 'Happy Clients',
       subtitle: 'consequuntur quae',
     },
     {
       icon: 'bi bi-journal-richtext',
-      end: 521,
+      end: 5,
       title: 'Projects',
       subtitle: 'adipisci atque cum quia aut',
     },
@@ -50,7 +50,7 @@ export const siteData = {
     },
     {
       icon: 'bi bi-people',
-      end: 32,
+      end: 3,
       title: 'Hard Workers',
       subtitle: 'rerum asperiores dolor',
     },
