@@ -15,11 +15,11 @@ export const siteData = {
   },
   heroTypedItems: ['IT Engineering Student'],
   socialLinks: [
-    { href: '#', class: 'twitter', icon: 'bi bi-github', label: 'GitHub' },
-    { href: '#', class: 'facebook', icon: 'bi bi-facebook', label: 'Facebook' },
-    { href: '#', class: 'instagram', icon: 'bi bi-telegram', label: 'Telegram' },
-    { href: '#', class: 'google-plus', icon: 'bi bi-youtube', label: 'YouTube' },
-    { href: '#', class: 'linkedin', icon: 'bi bi-linkedin', label: 'LinkedIn' },
+    { href: 'https://github.com/Dev-Theng', class: 'twitter', icon: 'bi bi-github', label: 'GitHub' },
+    { href: 'https://www.facebook.com/lim.buntheng.35', class: 'facebook', icon: 'bi bi-facebook', label: 'Facebook' },
+    { href: 'https://t.me/b0theng', class: 'telegram', icon: 'bi bi-telegram', label: 'Telegram' },
+    { href: 'https://youtube.com/@ite-theng?si=qr1Tx42CmfFmWoyq', class: 'google-plus', icon: 'bi bi-youtube', label: 'YouTube' },
+    { href: 'https://www.linkedin.com/in/lim-buntheng-88591738b/', class: 'linkedin', icon: 'bi bi-linkedin', label: 'LinkedIn' },
   ],
   navItems: [
     { label: 'Home', path: '/', hash: '#hero', icon: 'bi bi-house' },
