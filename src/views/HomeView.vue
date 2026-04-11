@@ -306,7 +306,7 @@ const sendContactForm = async (event) => {
             <div class="icon flex-shrink-0"><i :class="service.icon"></i></div>
             <div>
               <h4 class="title">
-                <RouterLink :to="service.link" class="stretched-link">{{ service.title }}</RouterLink>
+                <RouterLink class="stretched-link">{{ service.title }}</RouterLink>
               </h4>
               <p class="description">{{ service.description }}</p>
             </div>

@@ -1,7 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import PortfolioDetailsView from '../views/PortfolioDetailsView.vue'
-import ServiceDetailsView from '../views/ServiceDetailsView.vue'
 import StarterPageView from '../views/StarterPageView.vue'
 
 const router = createRouter({
@@ -20,11 +19,6 @@ const router = createRouter({
     {
       path: '/portfolio-details',
       redirect: '/portfolio/volunteer',
-    },
-    {
-      path: '/service-details',
-      name: 'service-details',
-      component: ServiceDetailsView,
     },
     {
       path: '/starter-page',

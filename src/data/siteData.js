@@ -129,7 +129,7 @@ export const siteData = {
       slug: 'ant-e-report',
       filter: 'filter-web',
       image: '/assets/img/portfolio/ANT-E_report.png',
-      title: 'ANT-E Report',
+      title: 'ANT E-Report',
       description: 'A reporting tool that summarizes key findings with charts and structured sections.',
       gallery: 'portfolio-gallery-app',
       details: '/portfolio/ant-e-report',
@@ -174,7 +174,7 @@ export const siteData = {
       },
     },
     {
-      slug: 'Jersey Sports',
+      slug: 'jersey-sports',
       filter: 'filter-app',
       image: '/assets/img/portfolio/Flutter.png',
       title: 'Jersey Sports',
@@ -182,11 +182,15 @@ export const siteData = {
       gallery: 'portfolio-gallery-app',
       details: '/portfolio/jersey-sports',
       detailsData: {
-        slides: [{ image: '/assets/img/portfolio/jersey-sports.jpg', alt: 'Jersey Sports slide 1' }],
+        slides: [
+          { image: '/assets/img/portfolio/Flutter.png', alt: 'Jersey Sports slide 1' },
+          { image: '/assets/img/portfolio/Flutter.png', alt: 'Jersey Sports slide 2' },
+        ],
         infoItems: [
           { label: 'Category', value: 'App' },
           { label: 'Role', value: 'UI and layout' },
-          { label: 'Project date', value: '2023' },
+          { label: 'Project date', value: '2025' },
+          { label: 'Project URL', value: 'Private' },
         ],
         descriptionTitle: 'Jersey Sports app concept',
         descriptionText:
@@ -338,36 +342,6 @@ export const siteData = {
     descriptionTitle: 'Exercitationem repudiandae officiis neque suscipit',
     descriptionText:
       'Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.',
-  },
-  serviceDetails: {
-    title: 'Service Details',
-    breadcrumbs: [
-      { label: 'Home', href: '/', current: false },
-      { label: 'Service Details', current: true },
-    ],
-    servicesList: [
-      { label: 'Web Design', active: true },
-      { label: 'Software Development' },
-      { label: 'Product Management' },
-      { label: 'Graphic Design' },
-      { label: 'Marketing' },
-    ],
-    introTitle: 'Enim qui eos rerum in delectus',
-    introText:
-      'Nam voluptatem quasi numquam quas fugiat ex temporibus quo est. Quia aut quam quod facere ut non occaecati ut aut. Nesciunt mollitia illum tempore corrupti sed eum reiciendis. Maxime modi rerum.',
-    heroImage: '/assets/img/services.jpg',
-    heroTitle:
-      'Temporibus et in vero dicta aut eius lidero plastis trand lined voluptas dolorem ut voluptas',
-    heroParagraphs: [
-      'Blanditiis voluptate odit ex error ea sed officiis deserunt. Cupiditate non consequatur et doloremque consequuntur. Accusantium labore reprehenderit error temporibus saepe perferendis fuga doloribus vero. Qui omnis quo sit. Dolorem architecto eum et quos deleniti officia qui.',
-      'Est reprehenderit voluptatem necessitatibus asperiores neque sed ea illo. Deleniti quam sequi optio iste veniam repellat odit. Aut pariatur itaque nesciunt fuga.',
-      'Sunt rem odit accusantium omnis perspiciatis officia. Laboriosam aut consequuntur recusandae mollitia doloremque est architecto cupiditate ullam. Quia est ut occaecati fuga. Distinctio ex repellendus eveniet velit sint quia sapiente cumque. Et ipsa perferendis ut nihil. Laboriosam vel voluptates tenetur nostrum. Eaque iusto cupiditate et totam et quia dolorum in. Sunt molestiae ipsum at consequatur vero. Architecto ut pariatur autem ad non cumque nesciunt qui maxime. Sunt eum quia impedit dolore alias explicabo ea.',
-    ],
-    heroList: [
-      'Aut eum totam accusantium voluptatem.',
-      'Assumenda et porro nisi nihil nesciunt voluptatibus.',
-      'Ullamco laboris nisi ut aliquip ex ea',
-    ],
   },
   starterPage: {
     title: 'Starter Page',
